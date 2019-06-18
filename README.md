@@ -1,4 +1,4 @@
-# draft-js-dynamic-plugins
+# draft-js-plugins-dynamic
 This will explain how to use multiple draft-js-plugins dynamically in one page in react js. 
 ```
 import React, { Component } from 'react';
