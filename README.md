@@ -130,3 +130,19 @@ export default compose(
 )(DraftEditorSingle);
 
 ```
+
+In Above React JS component we used https://github.com/draft-js-plugins/draft-js-plugins, draft-js-plugins is a wrapper on draf-js plugin. 
+
+The above component will help in building Inline toolbar for your editor with Ordered bulltets, Unordered numbers and a Link button, you can also add more plugins. Moreover, you can use this component for your form builder or a form which has dynamic fields i.e. you can create dynamic multiple editors within one page by calling the component like this:
+
+```
+<DraftEditorSingle
+  description={this.props.description}
+  descriptionEditChild={this.props.descriptionEdit}
+/>
+
+```
+
+In very above snippet, `description` is actually the value (content) of your editor and `descriptionEditChild` is a function which will be responsible for storing new value of your content. Simple!
+
+Please feel free to ask or add anything to this repository :)
